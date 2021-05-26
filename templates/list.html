@@ -1,0 +1,20 @@
+<body>
+    <center>
+        <a class="button2" name="link" value="Главная" href="/">Главная</a>
+        <a class="button2" name="link" value="Список" href="../listik">Список</a>
+        <div id="indicator"></div>
+    </center>
+{% for item in items %}
+<table border="1" cellspacing="0" cellpadding="7" width="50%" height="65">
+<tr>
+    <th>Сайт</th>
+    <th>Сокращенная ссылка</th>
+</tr>
+<tr>
+    <td>{{item[0]}}</td>
+    <td>{{item[1]}}</td>
+
+</tr>
+</table>
+{% endfor %}
+</body>
